@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&family=The+Nautigal:wght@700&family=Vujahday+Script&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background:linear-gradient(50deg, rgb(246, 22, 59),rgba(159, 7, 32, 0.889) , rgba(48, 5, 5, 0.883));
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+nav ul{
+    display: flex;
+    height: 60px;
+    position: sticky;
+    justify-content:end;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 23px;   
+}
+nav ul li a{
+    color:blanchedalmond; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    text-decoration: none;  
+}
+nav ul li a:hover{  
+    font-weight:bolder;
+}
+.logoname{
+    font-family: 'Satisfy', cursive;
+    font-size: 3em;
+    color: beige;
+    padding: 10px;
+}
+.bttn{
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10%;
+    border: 2px solid white;
+    color: maroon;
+    background-color: mintcream;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.bttn:hover{
+    font-weight:bolder;
+    background:rgb(255, 207, 195);
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.content{
+    position: relative;
+    width: 98.9vw;
+    height: 80vh;
+    box-sizing: border-box;
+    background-image:url("img/cake.jpg");
+    background-position: top; 
+}
+.innercontent  {
+    padding-top: 100px;
+    height: 20vh;
+    width: 70vw;
+    font-family: 'Pacifico', cursive;
+    font-size: xx-large;
+    text-align: center;
+}
+.btn{
+    margin: 10px;
+    width: 200px;
+    padding: 10px;
+    background:linear-gradient(150deg,red,maroon,darkred);
+    color: mintcream;
+    border-radius: 10px;
+    border: 3px solid rgb(103, 5, 5);
+    font-weight: bolder;
+    cursor: pointer;
+}
+.btn:hover{
+ color: rgb(103, 5, 5);
+ background: wheat ;
+ font-weight: bolder;
+}
+
+.waves{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.cards
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:center; 
+    flex-direction: row;
+    overflow:hidden;
+    background:linear-gradient(180deg, blanchedalmond, brown, pink);
+}
+img{
+    border-radius: 60px;
+}
+.card-items{
+    width: 400px;
+    margin: 50px;
+    flex-direction: column;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 10px 12px;
+    border: 5px dashed maroon;
+    border-radius: 60px;
+    background-color: peachpuff;
+    box-shadow:10px 5px 20px 0 rgb(24, 23, 23);
+}
+
+.card-items:hover{
+    background-image: url("img/pattern.jpg");
+}
+.details h2 p{
+    height: 20vh;
+   text-align: center;
+}
+.space
+{
+    margin: 30px;
+}
+footer
+{
+    display: flex;
+    padding-top: 20px;
+    align-content: center;
+    justify-content:center;
+    flex-direction: row;
+    background:linear-gradient(50deg, rgb(246, 22, 59),rgba(159, 7, 32, 0.889) , rgba(48, 5, 5, 0.883));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    height: 5vh;
+    color:blanchedalmond;
+}
+@media screen and (max-width:730px) {
+    nav ul li a{
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width:790px) {
+    nav{
+        flex-wrap: wrap;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width:415px) {
+    nav ul{
+        flex-wrap: wrap;
+    }
+ nav{
+     height: 240px;
+ } 
+ nav ul li a{
+    font-size: 80%;
+} 
+}
